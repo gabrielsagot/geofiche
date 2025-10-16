@@ -2,7 +2,7 @@
 // ========== CONFIGURATION ==========
 const AUTH_CONFIG = {
   // Utilisateur unique
-  username: 'testadmin',
+  username: 'Olivier_Sagot',  // ← Modifiez ici votre identifiant
   // Hash SHA-256 du mot de passe : "Admin@2025!Secure"
   // Le mot de passe est hashé pour plus de sécurité (pas stocké en clair)
   passwordHash: 'a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6', // Sera généré
@@ -145,9 +145,9 @@ async function authenticate(username, password) {
   // Hash du mot de passe saisi
   const inputHash = await simpleHash(password);
 
-  // Mot de passe en dur pour la démo : "Admin@2025!Secure"
+  // Mot de passe en dur pour la démo
   // En production, stocker le hash côté serveur
-  const correctPassword = 'Admin@2025!Secure';
+  const correctPassword = 'O_Sagot$@2025!geoFiche';  // ← Modifiez ici votre mot de passe
   const correctHash = await simpleHash(correctPassword);
 
   // Comparer les hash
@@ -344,6 +344,6 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   console.log('🔐 Système de login initialisé');
-  console.log('👤 Identifiant: testadmin');
-  console.log('🔑 Mot de passe: Admin@2025!Secure');
+  console.log('👤 Identifiant: admin');
+  console.log('🔑 Mot de passe: SosPapa2025!');
 });
