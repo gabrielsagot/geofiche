@@ -242,6 +242,41 @@ body::before {
     text-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+.sidebar-header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    position: relative;
+    z-index: 1;
+}
+
+.btn-logout {
+    background: rgba(239, 68, 68, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    color: var(--text-inverse);
+    cursor: pointer;
+    padding: 8px;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-base);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-logout:hover {
+    background: rgba(239, 68, 68, 0.3);
+    border-color: rgba(239, 68, 68, 0.6);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
+}
+
+.btn-logout svg {
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
 .sidebar-toggle {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);

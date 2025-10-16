@@ -1500,6 +1500,11 @@ function attachEventListeners() {
   getElement('resetBtn')?.addEventListener('click', resetFilters);
   getElement('statsBtn')?.addEventListener('click', showStats);
   getElement('exportBtn')?.addEventListener('click', exportData);
+  getElement('logoutBtn')?.addEventListener('click', () => {
+    if (confirm('Voulez-vous vraiment vous déconnecter ?')) {
+      window.authUtils.logout();
+    }
+  });
   getElement('toggleClustering')?.addEventListener('change', () => updateDisplay({ fitBounds: false }));
   getElement('toggleHeatmap')?.addEventListener('change', () => updateDisplay({ fitBounds: false }));
   getElement('filterSansFE')?.addEventListener('change', () => applyFilters({ silent: false }));
