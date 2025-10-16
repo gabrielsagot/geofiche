@@ -343,7 +343,5 @@ window.addEventListener('DOMContentLoaded', () => {
     usernameInput.focus();
   }
 
-  console.log('🔐 Système de login initialisé');
-  console.log('👤 Identifiant: admin');
-  console.log('🔑 Mot de passe: SosPapa2025!');
+
 });
